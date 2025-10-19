@@ -95,4 +95,8 @@ public class ColaPrioridadConListaOrdenada<T> {
 	public boolean estaVacia() {
 		return colas.size() == 0;
 	}
+	
+	public Integer getUltimaPrioridad() {
+		return ultimaPrioridad;
+	}
 }
