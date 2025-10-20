@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class ColaPrioridadConListaOrdenada<T> {
-	private List<Queue<T>> colas;
+	private final List<Queue<T>> colas;
 	private Integer ultimaPrioridad;
 
 	public ColaPrioridadConListaOrdenada() {
