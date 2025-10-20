@@ -19,7 +19,7 @@ public class Main {
         maxHeap.mostrar();
 
         System.out.println("\nMáximo (método consultar): " + maxHeap.consultar());
-
+        
         System.out.println("\nRemoviendo elementos...");
         while (maxHeap.consultar() != null) {
             System.out.println("\nSe removió: " + maxHeap.remover());
@@ -43,6 +43,11 @@ public class Main {
         System.out.println("\nMínimo (método consultar): " + minHeap.consultar());
         minHeap.cambiarAHeapComplemento(Comparator.naturalOrder());
         System.out.println("\nMáximo (convertí min a max): " + minHeap.consultar());
+        
+        System.out.println("\nMin convertido a max...");
+        minHeap.mostrar();
+        
+        System.out.println("Restituyendo MinHeap original...");
         minHeap.cambiarAHeapComplemento(Comparator.reverseOrder());
         
         System.out.println("\nRemoviendo elementos...");
